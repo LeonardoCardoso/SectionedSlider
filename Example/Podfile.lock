@@ -1,0 +1,16 @@
+PODS:
+  - SectionedSlider (0.0.2)
+
+DEPENDENCIES:
+  - SectionedSlider (from `../`)
+
+EXTERNAL SOURCES:
+  SectionedSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SectionedSlider: b6e84b6f238259c6024566e04ce5a0aa3ec4c280
+
+PODFILE CHECKSUM: be75490de1e91b92d1de255a1c69cf94cb3d373b
+
+COCOAPODS: 1.2.1
