@@ -482,11 +482,15 @@ open class SectionedSlider: UIView {
         
         super.init(frame: frame)
         
-        self.backgroundColor = palette.viewBackgroundColor
-        
-        self.selectedSection = selectedSection
-        self.sections = sections
-        self.palette = palette
+        //Because we use observers, for them to run in the initializers defer is needed.
+        // See: https://stackoverflow.com/a/33979852/1904232
+        defer {
+            self.backgroundColor = palette.viewBackgroundColor
+            
+            self.selectedSection = selectedSection
+            self.sections = sections
+            self.palette = palette
+        }
 
         draw()
         
