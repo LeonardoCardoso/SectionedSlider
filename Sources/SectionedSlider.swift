@@ -10,7 +10,7 @@ import UIKit
 
 public protocol SectionedSliderDelegate {
     
-    func sectionChanged(selected: Int)
+	func sectionChanged(slider: SectionedSlider, selected: Int)
     
 }
 
@@ -450,7 +450,7 @@ open class SectionedSlider: UIView {
     private var factor: CGFloat = 0.0 {
         willSet {
             (layer as? SectionedSliderLayer)?.factor = newValue
-            delegate?.sectionChanged(selected: abs(Int(ceil(CGFloat(newValue) * CGFloat(sections)))))
+			delegate?.sectionChanged(slider: self, selected: abs(Int(ceil(CGFloat(newValue) * CGFloat(sections)))))
 
             draw()
         }
