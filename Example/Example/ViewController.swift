@@ -27,10 +27,8 @@ class ViewController: UIViewController {
 
 extension ViewController: SectionedSliderDelegate {
     
-    func sectionChanged(selected: Int) {
-        
+    func sectionChanged(slider: SectionedSlider, selected: Int) {
         label?.text = "Section #\(selected)"
-        
     }
     
 }

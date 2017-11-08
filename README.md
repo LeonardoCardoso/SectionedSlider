@@ -5,7 +5,7 @@
 | ![iOS](Images/static.gif) | ![watchOS](Images/static2.gif) |
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/LeonardoCardoso/SectionedSlider#requirements-and-details)
-[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-red.svg)](https://github.com/LeonardoCardoso/SectionedSlider#cocoapods)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.3-red.svg)](https://github.com/LeonardoCardoso/SectionedSlider#cocoapods)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/LeonardoCardoso/SectionedSlider#carthage)
 
 > Control Center Slider
@@ -31,7 +31,7 @@
 $ gem install cocoapods
 ```
 
-> CocoaPods 1.1.0+ is required to build SectionedSlider 0.0.2+.
+> CocoaPods 1.1.0+ is required to build SectionedSlider 0.0.3+.
 
 To integrate SectionedSlider into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
@@ -40,7 +40,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'SectionedSlider', '~> 0.0.2'
+pod 'SectionedSlider', '~> 0.0.3'
 ```
 
 Then, run the following command:
@@ -63,7 +63,7 @@ $ brew install carthage
 To integrate SectionedSlider into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "LeonardoCardoso/SectionedSlider" ~> 0.0.2
+github "LeonardoCardoso/SectionedSlider" ~> 0.0.3
 ```
 
 ### Manually
