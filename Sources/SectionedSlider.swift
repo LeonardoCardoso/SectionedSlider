@@ -429,7 +429,7 @@ open class SectionedSlider: UIView {
         }
     }
     
-    @IBInspectable var sections: Int = 10 {
+    @IBInspectable open var sections: Int = 10 {
         willSet {
             if newValue < 2 || newValue > 20 {
                 debugPrint("sections must be between 2 and 20")
@@ -437,7 +437,7 @@ open class SectionedSlider: UIView {
         }
     }
 
-    @IBInspectable var selectedSection: Int = 0 {
+    @IBInspectable open var selectedSection: Int = 0 {
         didSet {
             if selectedSection < 0 || selectedSection > sections {
                 debugPrint("sections must be between 0 and \(sections)")
