@@ -491,6 +491,8 @@ open class SectionedSlider: UIView {
             self.sections = sections
             self.palette = palette
         }
+        
+        addPanGesture()
 
         draw()
         
@@ -506,6 +508,8 @@ open class SectionedSlider: UIView {
     override open func awakeFromNib() {
         
         super.awakeFromNib()
+        
+        addPanGesture()
 
         draw()
         
@@ -537,6 +541,12 @@ open class SectionedSlider: UIView {
     }
     
     // MARK: - Functions
+    
+    private func addPanGesture() {
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(SectionedSlider.dragged(gesture:)))
+        self.addGestureRecognizer(gesture)
+    }
+    
     private func resetManipulables() {
         
         guard let layer: SectionedSliderLayer = layer as? SectionedSliderLayer else { return }
@@ -562,20 +572,6 @@ open class SectionedSlider: UIView {
 
         super.touchesBegan(touches, with: event)
 
-        touchedX(touches)
-
-    }
-
-    open override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-
-        super.touchesMoved(touches, with: event)
-
-        touchedX(touches)
-
-    }
-
-    private func touchedX(_ touches: Set<UITouch>) {
-
         guard
             let touch = touches.first
             else { return }
@@ -585,6 +581,15 @@ open class SectionedSlider: UIView {
 
         factor = x / self.frame.height
 
+    }
+    
+    @objc private func dragged(gesture: UIPanGestureRecognizer) {
+        
+        let point = gesture.location(in: self)
+        var x = self.frame.height - point.y
+        x = x < 0 ? -1 : (x > self.frame.height ? self.frame.height : x)
+        factor = x / self.frame.height
+        
     }
     
 }
