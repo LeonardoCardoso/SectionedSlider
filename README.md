@@ -106,10 +106,10 @@ SectionedSlider(
 You can watch changes of state by implementing the protocol:
 
 ```swift
-protocol SectionedSliderDelegate {
-
-    func sectionChanged(selected: Int)
-
+public protocol SectionedSliderDelegate {
+    
+	func sectionChanged(slider: SectionedSlider, selected: Int)
+    
 }
 ```
 
