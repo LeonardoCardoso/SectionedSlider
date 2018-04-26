@@ -487,8 +487,8 @@ open class SectionedSlider: UIView {
         defer {
             self.backgroundColor = palette.viewBackgroundColor
             
-            self.selectedSection = selectedSection
             self.sections = sections
+            self.selectedSection = selectedSection
             self.palette = palette
         }
         
