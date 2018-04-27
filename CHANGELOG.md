@@ -1,9 +1,16 @@
 # Change Log
 
 #### 0.x Releases
-- `0.0.x` Releases - [0.0.2](#002) | [0.0.3](#003) | [0.0.4](#004)
+- `0.0.x` Releases - [0.0.2](#002) | [0.0.3](#003) | [0.0.4](#004) | [0.0.5](#005)
 
 ---
+
+## [0.0.5](https://github.com/LeonardoCardoso/SectionedSlider/releases/tag/0.0.5)
+Released on 2018-04-27.
+
+#### Fixed
+- Unable to select more than 10 sections.
+  - Added by [Simeon Kostadinov](https://github.com/simonnoff).
 
 ## [0.0.4](https://github.com/LeonardoCardoso/SectionedSlider/releases/tag/0.0.4)
 Released on 2017-12-18.
