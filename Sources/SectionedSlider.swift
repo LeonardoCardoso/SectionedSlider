@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol SectionedSliderDelegate {
+public protocol SectionedSliderDelegate: AnyObject {
     
 	func sectionChanged(slider: SectionedSlider, selected: Int)
     
@@ -459,7 +459,7 @@ open class SectionedSlider: UIView {
     // MARK: - Properties
     private var keyPath: String = "factor"
     private var palette: Palette = Palette()
-    open var delegate: SectionedSliderDelegate? {
+    open weak var delegate: SectionedSliderDelegate? {
         didSet {
             let factor = self.factor
             self.factor = factor
