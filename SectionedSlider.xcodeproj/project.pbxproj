@@ -51,7 +51,6 @@
 				98287C631EE73B5400FA064B /* Supporting Files */,
 				98287C661EE73D0900FA064B /* SectionedSlider.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -61,7 +60,6 @@
 				98287C5C1EE73B1D00FA064B /* Info.plist */,
 				98287C5B1EE73B1D00FA064B /* SectionedSlider.h */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -108,7 +106,7 @@
 				TargetAttributes = {
 					98287C571EE73B1D00FA064B = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -118,6 +116,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 98287C4E1EE73B1D00FA064B;
@@ -270,7 +269,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -290,7 +290,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.SectionedSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -313,6 +314,7 @@
 				98287C621EE73B1D00FA064B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
