@@ -100,7 +100,6 @@
 				98287C6E1EE7443100FA064B /* Frameworks */,
 				98287C6F1EE7443100FA064B /* Resources */,
 				B201297C64912C9375419BD5 /* [CP] Embed Pods Frameworks */,
-				BFF0CED05D51E426A2051F19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +122,7 @@
 				TargetAttributes = {
 					98287C701EE7443100FA064B = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -183,7 +183,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SectionedSlider/SectionedSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -192,22 +192,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFF0CED05D51E426A2051F19 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -363,7 +348,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -379,7 +365,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leocardz.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
